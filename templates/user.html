@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/1104834303008985118/1187716070312775770/avatar_server.png?ex=65b39549&is=65a12049&hm=dbcb2c4075d18fe96199b9e91d7a0a4d5a27b811c33983761e6701465d9599c9&" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <title>WezerShop</title>
+  <meta name="description" content="Wezer Shop - Кращий магазин для донату в фортнайт в Україні">
+  <meta name="theme-color" content="#9656ce">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/1104834303008985118/1187716070312775770/avatar_server.png?ex=65b39549&is=65a12049&hm=dbcb2c4075d18fe96199b9e91d7a0a4d5a27b811c33983761e6701465d9599c9&" />
+  <meta property="og:url" content="https://wezer-shop.space/">
+  <meta property="og:url" content="https://wezer-shop.space">
+  <meta name="keywords" content='"Фортнайт, Вбаксы, Дешевый донат, магазин, Магазин фортнайт, Вбаксы фортнайт, Донат фортнайт, Фортнайт магазин Украина, Вбаксы, Донат, Wezer Shop, Wezer Shop Fortnite"'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/theTrendingStyle.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  <link href="fortnite.ttf" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet">
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelector(".inside-city").style.opacity = 1;
+      document.querySelector(".inside-city").style.transform = "translateX(0)";
+      document.documentElement.requestFullscreen().catch((err) => {
+        console.log(`Error attempting to enable full-screen mode: ${err.message}`);
+      });
+    });
+
+    function selectLanguage(language) {
+      var url = language === 'en' ? 'ua/index.html' : 'en/index.html';
+      window.location.href = url;
+    }
+  </script>
+  
+</head>
+
+<body>
+  
+  <div class="top-bar">
+    <a href="index.html">
+      <img src="https://cdn.discordapp.com/attachments/1104834303008985118/1187716070312775770/avatar_server.png?ex=65b39549&is=65a12049&hm=dbcb2c4075d18fe96199b9e91d7a0a4d5a27b811c33983761e6701465d9599c9&" alt="Logo">
+    </a>
+  
+    <div class="top-bar">
+      <a href="index.html">
+        <img src="{{ request.args.get('avatar_url', '') }}" alt="User Avatar">
+      </a>
+      <span>{{ request.args.get('username', '') }}</span>
+  </div>
+  
+
+  <div id="container" class="flex flex-col items-center justify-center">
+    <div class="flex flex-col items-center justify-center pt-40 text-center">
+      <div class="city bg">
+        <div class="mask"></div>
+        <div class="inside-city bg">
+          
+          <span class="text-4xl md:text-5xl font-semibold text-white">WezerShop</span>
+          <span class="text-white text-lg md:text-xl max-w-xl font-light "><b><h1><span class="text-info">Кращий магазин для донату в фортнайт в Україні</p></span>
+              &nbsp
+              <a href="https://discord.gg/aPjJfXJpSY" target="_blank" class="text-2xl hvr-grow bg-blurple p-4 md:px-8 mx-4 my-4 rounded-lg text-white">Discord</a>
+              <a href="https://discord.com/channels/1104805728566378529/1104840191379767490" target="_blank" class="text-2xl hvr-grow bg-blurple p-4 md:px-8 mx-4 my-4 rounded-lg text-white">Відгуки</a>
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7770609929174376"
+              crossorigin="anonymous"></script>
+         
+
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+  </footer> -->
+
+</body>
+
+</html>
+
+
+
+
+
+
